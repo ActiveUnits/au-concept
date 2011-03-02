@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]--><head>
+	<meta charset="UTF-8">
+	
+	<title></title>
+	
+	<meta name="description" content="active units concept">
+	<meta name="author" content="Boris Filipov">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	 -->
+	 
+	<link rel="stylesheet" href="css/style.css?v=2">
+
+	<script src="js/libs/modernizr-1.6.min.js"></script></head>
+<body>
+	<div id="header-container">
+		<p class="info">draft v0.2, 02.03.2011</p>
+		<header class="wrapper">
+			<h1 id="title">ActiveUnits</h1>
+			<nav>
+				<ul>
+					<li><a href="http://activeunits.org">Blog</a></li>
+					<li><a href="http://activeunits.org/forum">Forum</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div id="main" class="wrapper">
+		<article>
+			<header>
+				<h2>Concept</h2>
+			</header>
+			<a id="toc" class="anchor"></a>
+			<h3>Table of contents</h3>
+			<ol class="toc">
+				<li><a href="#Introduction">Introduction</a></li>
+				<li>
+					<a href="#Description">Description</a>
+					<ol style="list-style-type: lower-alpha;">
+						<li><a href="#SOA,SAAS">SOA,SAAS</a></li>
+						<li><a href="#WebService">Web service</a></li>
+						<li><a href="#ActiveUnitsNetwork">Active Units Network</a></li>
+						<li><a href="#Units">Units</a></li>
+					</ol>
+				</li>
+			</ol>
+			<a id="Introduction" class="anchor"></a>
+			<h2>Introduction</h2>
+			<p>
+				This web page is a concept description of open source innovation project named Active Units (formly known as ABN). 
+			</p>
+			<p>
+				Abbreviations
+				<ul>
+					<li>API = application program interface</li>
+					<li>LIB = source code library of classes structured within namespaces.</li> 
+					<li>Unit = software application instance (service, web app, mobile app & etc.)</li>
+				</ul>
+			</p>
+			<a id="Description" class="anchor"></a>
+			<h2>Description</h2>
+			<a id="SOA,SAAS" class="anchor"></a>
+			<h3>SOA,SAAS</h3>
+			<p>
+				Service-oriented architecture (SOA) is a flexible set of design principles used during the phases of systems development 
+				and integration in computing. A system based on a SOA will package functionality as a suite of interoperable services 
+				that can be used within multiple separate systems from several business domains. [1]
+			</p>
+			<p>
+				Software as a service (SaaS, typically pronounced [sæs]), sometimes referred to as "software on demand," is software 
+				that is deployed over the Internet and/or is deployed to run behind a firewall on a local area network or personal computer. [2]
+			</p>
+			<p>
+				In regards to SOA & SAAS Active Units concept represent a flexible set of design principles also including ready to use 
+				web services & pre-build facilities used to develop Internet based software systems. 
+			</p>
+			<a id="WebService" class="anchor"></a>
+			<h3>Web service</h3>
+			<p>
+				A Web service is a method of communication between two electronic devices.
+				The W3C defines a "Web service" as "a software system designed to support interoperable machine-to-machine 
+				interaction over a network. [3] 
+			</p>
+			<p>
+				In regards to web services definition AU concept maps those as "units" and thereafter includes also user interface 
+				software applications clients under the same term.
+			</p>
+			<a id="ActiveUnitsNetwork" class="anchor"></a>
+			<h3>Active Units Network</h3>
+			<p>
+				By definition Active Units Network is an software system of units designed to solve specific problem. 
+			</p>
+			<a id="Units" class="anchor"></a>
+			<h3>Units</h3>
+			<p>
+				Units are building parts of the Active Units Network working as a suite of interoperable services & end-user software applications.
+				Units as software applications are single-purpose solutions build on top of existing technologies/languages including but not limited to: 
+				<ul>
+					<li>php</li>
+					<li>ruby</li>
+					<li>java</li>
+					<li>python</li>
+					<li>javascript</li>
+				</ul>				
+			</p>
+			<p>
+				Units as web services within SOA-like Active Units Network use an Internet communication protocols best suitable to the 
+				unit's own purpose. There are no unified or standartized units' communication protocol and structure due the very different 
+				design & purpose of them. The following however proved to satisfy most of the requirements in real world units implementation:
+				<ul>
+					<li>http</li>
+					<li>xmpp</li>
+					<li>tcp</li>
+					<li>rabbitMQ</li>
+					<li>dnode</li>
+				</ul> 
+			</p>
+			<p>
+				The general purpose of having Active Units based software solutions build on "units" is to be able to re-use particular units 
+				for solving specific application problems & requirements. 
+			</p>
+		</article>
+	</div>
+	<div id="footer-container">
+		<footer class="wrapper">
+			<p>
+				References:
+				<ul>
+					<li>
+						<a href="http://en.wikipedia.org/wiki/Service-oriented_architecture">
+						[1] http://en.wikipedia.org/wiki/Service-oriented_architecture
+						</a>
+					</li>
+					<li>
+						<a href="http://en.wikipedia.org/wiki/Software_as_a_service">
+						[2] http://en.wikipedia.org/wiki/Software_as_a_service
+						</a>
+					</li>
+					<li>
+						<a href="http://en.wikipedia.org/wiki/Web_service">
+						[3] http://en.wikipedia.org/wiki/Web_service
+						</a>
+					</li>
+				</ul>
+			</p>
+		</footer>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+	<!--[if lt IE 7 ]>
+	<script src="js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<![endif]-->
+</body>
+</html>
