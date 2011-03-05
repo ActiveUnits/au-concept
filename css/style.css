@@ -181,20 +181,6 @@ nav a:hover, nav a:visited {
 	color: white;
 }
 
-aside{
-	color:white;
-	padding:20px;
-	float:right;
-	height:500px;
-	width:200px;
-	background-color:#f16529;
-	border-bottom:20px solid #e44d26;
-	margin-bottom:50px;
-	-webkit-box-shadow:0 0px 40px -10px #AAA;
-	   -moz-box-shadow:0 0px 40px -10px #AAA;
-	        box-shadow:0 0px 40px -10px #AAA;	
-}
-
 #main {
 	margin-top: 160px;
 }
@@ -246,59 +232,6 @@ article a:hover, a:visited {
 	color: black;
 }
 
-#builder a{
-	display:block;
-	width:250px;
-	padding:20px;
-	text-align:center;
-	text-decoration:none;
-	font-size: 30px;
-	color:white;
-	margin-bottom:50px;
-	-webkit-box-shadow:0px 15px 20px -10px #AAA;
-	   -moz-box-shadow:0px 15px 20px -10px #AAA;
-	        box-shadow:0px 15px 20px -10px #AAA;
-	background-color:#bbb;
-	border-bottom:20px solid #aaa;
-	float:left;
-	margin-right:40px;
-}
-
-#builder a.selected{
-	
-	background-color:#f16529;
-	border-bottom:20px solid #e44d26;
-}
-
-#builder #download{
-	font-size: 50px;
-	width:580px;
-	font-size: 74px;
-	float:none;
-	margin-top:40px;
-	height:110px;
-	padding-top:40px;
-}
-
-#builder #download img{
-	float:right;
-	margin-right:10px;
-	position:relative;
-	bottom:10px;
-}
-
-#builder h3{
-	clear:both;
-}
-
-#builder section{
-	width:660px;
-	-webkit-box-shadow:0 45px 60px -60px #AAA;
-	   -moz-box-shadow:0 45px 60px -60px #AAA;
-	        box-shadow:0 45px 60px -60px #AAA;
-	        padding-bottom:0px;
-}
-
 
 #footer-container{
 	background-color:#707070;
@@ -314,24 +247,20 @@ article a:hover, a:visited {
 	color:white;
 }
 
+#footer-container footer a{
+	color: black;
+}
+
+#footer-container footer a:hover, a:visited {
+	color: black;
+}
+
 .info{
 	position:absolute;
 	top:5px;
 	background-color:white;
 	padding:10px;
 }
-
-#jquery-test{
-	top:45px;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -381,6 +310,10 @@ article a:hover, a:visited {
 }
 
 @media print {
+  a.anchor:after {
+  	position: relative !important;
+  	content: "" !important; 
+  }
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a:after { content: " (" attr(href) ")"; } 
@@ -392,5 +325,19 @@ article a:hover, a:visited {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
+  #header-container {
+  	position: relative !important;
+  }
+  #footer-container {
+  	position: relative !important;
+  	background-color: white !important;
+  	height: auto !important;
+  }
+  #main p{
+  	width: 100% !important;
+  }
+  article.wrapper {
+	width:100% !important;
+  }
 }
 

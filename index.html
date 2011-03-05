@@ -20,7 +20,7 @@
 	<script src="js/libs/modernizr-1.6.min.js"></script></head>
 <body>
 	<div id="header-container">
-		<p class="info">draft v0.2, 02.03.2011</p>
+		<p class="info">draft v0.3, 05.03.2011</p>
 		<header class="wrapper">
 			<h1 id="title">ActiveUnits</h1>
 			<nav>
@@ -31,100 +31,152 @@
 			</nav>
 		</header>
 	</div>
-	<div id="main" class="wrapper">
-		<article>
+	<div id="main">
+		<article class="wrapper">
 			<header>
-				<h2>Concept</h2>
+				<h2>The problem</h2>
+				<p>
+					Fast development of small to large scale web based software applications designed to serve different end-user requirements.
+					Such software applications should be scalable, maintainable and extendable using rapid continuos deployment without 
+					sacrificing system complexity.
+				</p>
 			</header>
+			
 			<a id="toc" class="anchor"></a>
 			<h3>Table of contents</h3>
-			<ol class="toc">
-				<li><a href="#Introduction">Introduction</a></li>
-				<li>
-					<a href="#Description">Description</a>
-					<ol style="list-style-type: lower-alpha;">
-						<li><a href="#SOA,SAAS">SOA,SAAS</a></li>
-						<li><a href="#WebService">Web service</a></li>
-						<li><a href="#ActiveUnitsNetwork">Active Units Network</a></li>
-						<li><a href="#Units">Units</a></li>
-					</ol>
-				</li>
-			</ol>
+				<ol class="toc">
+					<li><a href="#Introduction">Introduction</a></li>
+					<li>
+						<a href="#Basedon">Based on</a>
+						<ol style="list-style-type: lower-alpha;">
+							<li><a href="#SOA,SAAS">SOA,SAAS</a></li>
+							<li><a href="#WebService">Web service</a></li>
+							<li><a href="#SystemsTheory">Systems theory</a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="#Differences">Differences</a>
+						<ol style="list-style-type: lower-alpha;">
+							<li><a href="#Concept">Concept</a></li>
+							<li><a href="#EcoSystem">EcoSystem</a></li>
+							<li><a href="#Units">Units</a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="#Considerations">Considerations</a>
+						<ol style="list-style-type: lower-alpha;">
+							<li><a href="#Benefits">Benefits</a></li>
+							<li><a href="#Drawbacks">Drawbacks</a></li>
+						</ol>
+					</li>
+				</ol>
+			
 			<a id="Introduction" class="anchor"></a>
 			<h2>Introduction</h2>
-			<p>
-				This web page is a concept description of open source innovation project named Active Units (formly known as ABN). 
-			</p>
-			<p>
-				Abbreviations
-				<ul>
-					<li>API = application program interface</li>
-					<li>LIB = source code library of classes structured within namespaces.</li> 
-					<li>Unit = software application instance (service, web app, mobile app & etc.)</li>
-				</ul>
-			</p>
-			<a id="Description" class="anchor"></a>
-			<h2>Description</h2>
-			<a id="SOA,SAAS" class="anchor"></a>
-			<h3>SOA,SAAS</h3>
-			<p>
-				Service-oriented architecture (SOA) is a flexible set of design principles used during the phases of systems development 
-				and integration in computing. A system based on a SOA will package functionality as a suite of interoperable services 
-				that can be used within multiple separate systems from several business domains. [1]
-			</p>
-			<p>
-				Software as a service (SaaS, typically pronounced [sæs]), sometimes referred to as "software on demand," is software 
-				that is deployed over the Internet and/or is deployed to run behind a firewall on a local area network or personal computer. [2]
-			</p>
-			<p>
-				In regards to SOA & SAAS Active Units concept represent a flexible set of design principles also including ready to use 
-				web services & pre-build facilities used to develop Internet based software systems. 
-			</p>
-			<a id="WebService" class="anchor"></a>
-			<h3>Web service</h3>
-			<p>
-				A Web service is a method of communication between two electronic devices.
-				The W3C defines a "Web service" as "a software system designed to support interoperable machine-to-machine 
-				interaction over a network. [3] 
-			</p>
-			<p>
-				In regards to web services definition AU concept maps those as "units" and thereafter includes also user interface 
-				software applications clients under the same term.
-			</p>
-			<a id="ActiveUnitsNetwork" class="anchor"></a>
-			<h3>Active Units Network</h3>
-			<p>
-				By definition Active Units Network is an software system of units designed to solve specific problem. 
-			</p>
-			<a id="Units" class="anchor"></a>
-			<h3>Units</h3>
-			<p>
-				Units are building parts of the Active Units Network working as a suite of interoperable services & end-user software applications.
-				Units as software applications are single-purpose solutions build on top of existing technologies/languages including but not limited to: 
-				<ul>
-					<li>php</li>
-					<li>ruby</li>
-					<li>java</li>
-					<li>python</li>
-					<li>javascript</li>
-				</ul>				
-			</p>
-			<p>
-				Units as web services within SOA-like Active Units Network use an Internet communication protocols best suitable to the 
-				unit's own purpose. There are no unified or standartized units' communication protocol and structure due the very different 
-				design & purpose of them. The following however proved to satisfy most of the requirements in real world units implementation:
-				<ul>
-					<li>http</li>
-					<li>xmpp</li>
-					<li>tcp</li>
-					<li>rabbitMQ</li>
-					<li>dnode</li>
-				</ul> 
-			</p>
-			<p>
-				The general purpose of having Active Units based software solutions build on "units" is to be able to re-use particular units 
-				for solving specific application problems & requirements. 
-			</p>
+				<p>
+					This web page is a concept description of open source innovation project named Active Units (formly known as ABN).  
+				</p>
+			
+			<a id="Basedon" class="anchor"></a>
+			<h2>Based on</h2>
+				<a id="SOA,SAAS" class="anchor"></a>
+				<h3>SOA,SAAS</h3>
+					<p>
+						Service-oriented architecture (SOA) is a flexible set of design principles used during the phases of systems development 
+						and integration in computing. A system based on a SOA will package functionality as a suite of interoperable services 
+						that can be used within multiple separate systems from several business domains. [1]
+					</p>
+					<p>
+						Software as a service (SaaS, typically pronounced [sæs]), sometimes referred to as "software on demand," is software 
+						that is deployed over the Internet and/or is deployed to run behind a firewall on a local area network or personal computer. [2]
+					</p>
+				<a id="WebService" class="anchor"></a>
+				<h3>Web service</h3>
+					<p>
+						A Web service is a method of communication between two electronic devices.
+						The W3C defines a "Web service" as "a software system designed to support interoperable machine-to-machine 
+						interaction over a network. [3] 
+					</p>
+				<a id="SystemsTheory" class="anchor"></a>
+				<h3>Systems theory</h3>
+					<p>
+						Real systems are open to, and interact with, their environments, and that they can acquire 
+						qualitatively new properties through emergence, resulting in continual evolution. Rather than reducing an entity 
+						(e.g. the human body) to the properties of its parts or elements (e.g. organs or cells), systems theory focuses 
+						on the arrangement of and relations between the parts which connect them into a whole (cf. holism). This particular 
+						organization determines a system, which is independent of the concrete substance of the elements 
+						(e.g. particles, cells, transistors, people, etc). Thus, the same concepts and principles of organization underlie 
+						the different disciplines (physics, biology, technology, sociology, etc.), providing a basis for their unification. [4]
+					</p>
+			
+			<a id="Differences" class="anchor"></a>
+			<h2>Differences</h2>
+				<a id="Concept" class="anchor"></a>
+				<h3>Concept</h3>
+					<p>
+						In regards to SOA & SAAS Active Units concept represent a flexible set of design principles including ready to use 
+						web services & pre-build facilities used to develop Internet based software systems.
+					</p>
+					<a id="EcoSystem" class="anchor"></a>
+					<h3>EcoSystem</h3>
+					<p>
+						Based on the systems theory AU reflects development of software applications as a system consisted of various interconnected 
+						low-level systems and/or units. Most commonly recognized from practice are:  
+						<ul>
+							<li>Kernel/Core system</li>
+							<li>User management system</li>
+							<li>Assets management system</li>
+						</ul>
+					</p>
+				<a id="Units" class="anchor"></a>
+				<h3>Units</h3>
+					<p>
+						In regards to web services definition AU concept maps those as "units" and thereafter includes user interface 
+						software applications clients under the same term.
+					</p>
+					<p>
+						Units are building parts of the any AU based software system. Working as a suite of interoperable services & end-user software applications,
+						units are single-purpose solutions build on top of existing technologies/languages including but not limited to: 
+						<ul>
+							<li>php</li>
+							<li>ruby</li>
+							<li>java</li>
+							<li>python</li>
+							<li>javascript</li>
+						</ul>				
+					</p>
+					<p>
+						Units within SOA-like Active Units based software system use an Internet communication protocols best suitable to the 
+						unit's own purpose. There are no unified or standardized units' communication protocols due the very different 
+						design & purpose of them. The following however proved to satisfy most of the requirements in real world units implementation:
+						<ul>
+							<li>http</li>
+							<li>xmpp</li>
+							<li>tcp</li>
+						</ul> 
+					</p>
+				
+			<a id="Considerations" class="anchor"></a>
+			<h2>Considerations</h2>
+				<a id="Benefits" class="anchor"></a>
+				<h3>Benefits</h3>
+					<p>
+						AU based software solution benefits of the following:
+						<ul>
+							<li>Decentralized development & implementation</li>
+							<li>Rapid software implementation rates due re-using units upon matching purpose</li>
+							<li>Ready to scale & evolve in regards to software's business requirements</li>
+						</ul>  
+					</p>
+				<a id="Drawbacks" class="anchor"></a>
+				<h3>Drawbacks</h3>
+					<p>
+						AU based software solution in practice may fail to accomplish its designed purpose due the following:
+						<ul>
+							<li>Wrong designed system architecture - can be avoided by following best practices and design patterns derrived from SOA & SAAS</li>
+							<li>Wrong designed data relations and storage solutions - can be avoided by using suitable data store technologies for designed purpose</li> 
+						</ul>
+					</p>
 		</article>
 	</div>
 	<div id="footer-container">
@@ -145,6 +197,11 @@
 					<li>
 						<a href="http://en.wikipedia.org/wiki/Web_service">
 						[3] http://en.wikipedia.org/wiki/Web_service
+						</a>
+					</li>
+					<li>
+						<a href="http://pespmc1.vub.ac.be/SYSTHEOR.html">
+						[4] http://pespmc1.vub.ac.be/SYSTHEOR.html
 						</a>
 					</li>
 				</ul>
