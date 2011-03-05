@@ -314,6 +314,10 @@ article a:hover, a:visited {
   	position: relative !important;
   	content: "" !important; 
   }
+  .toc a:after {
+  	position: relative !important;
+  	content: "" !important; 
+  }
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a:after { content: " (" attr(href) ")"; } 
